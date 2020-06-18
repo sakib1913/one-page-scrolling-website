@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>one page scrolling website using html and css</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+            html{
+                scroll-behavior: smooth;
+            }
+            body{
+                margin: 0;
+                padding: 0;
+                font-family: Arial;
+            }
+            nav{
+                width: 100%;
+                background: black;
+                overflow: hidden;
+                position: fixed;
+                top: 0;
+            }
+            ul{
+                padding: 0;
+                margin: 0;
+                list-style: none;
+            }
+            li{
+                float: right;
+            }
+            a{
+                padding: 20px;
+                width: 100px;
+                display: block;
+                text-decoration: none;
+                color: white;
+                text-transform: uppercase;
+                font-weight: bold;
+            }
+            #istsec
+            {
+                height: 700px;
+                background:white;
+                display: inline-block;
+                width: 100%;
+            
+            }
+            #secondsec
+            {
+                height: 700px;
+                background:white;
+                display: inline-block;
+                width: 100%;
+            
+            }
+            #thirdsec
+            {
+                height: 700px;
+                background: white;
+                display: inline-block;
+                width: 100%;
+            
+            }
+            #fourthsec
+            {
+                height: 700px;
+                background:white;
+                display: inline-block;
+                width: 100%;
+            
+            }
+            #fifthsec
+            {
+                height: 700px;
+                background: blue;
+                display: inline-block;
+                width: 100%;
+                background-color: whitesmoke;
+                
+            
+            }
+            h1{
+                margin: 100px;
+                text-align: center;
+                padding: 0;
+            }
+            #main{
+                background-image: url("pics/ch.jpg");
+                text-align: center;
+                color: black;
+                height: 200px;
+                width: 100%;
+                margin: 0;
+                padding: 0;
+                top: 0;
+                display: inline-block;
+                font-style: bold;
+                
+            }
+            #n{
+                text-align: left;
+                display: inline-block;
+                margin: 5px;
+                padding: 1px;
+                top: 1px;
+            }
+            img {
+                float: right;
+                margin: 5px; 
+                border-radius: 20px;
+            }
+            p{
+                text-align: justify; 
+                font-size: 20px; 
+            }
+            #mp{
+                float: left;
+                padding: 5px;
+                margin: 10px;
+            }
+            #ab{
+                opacity: 20;
+            }
+            #about{
+                float: left;
+            }
+            #n4{
+                text-align: left;
+                display: inline-block;
+                margin: 5px;
+                padding: 1px;
+                top: 1px;
+            
+            
+            }
+            #fi
+            {
+                float:right;
+            
+            }
+            .container{
+                width: 90%;
+                margin: auto;
+                overflow: hidden;
+            
+            }
+            #contact-section{
+                
+                background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.9)),url("pics/c.jpg");
+                background-size: cover;
+                background-position: center;
+                height: 100%;
+                width: 100%;
+                padding-bottom: 2%;
+            }
+            #contact-section .container h4{
+                text-align: center ;
+                text-decoration:underline;
+                text-underline-position:under ;
+                color: (238,235,235);
+                letter-spacing: 2px;
+            
+            }
+            #contact-section .container .t{
+                text-align: center;
+                width: 70%;
+                margin-left: auto;
+                margin-right: auto;
+                color: #fff;
+                letter-spacing: 3px;
+            
+            }
+            .contact-form .fa{
+                font-size: 22px;
+                padding: 3%;
+                background-color: none;
+                border-radius: 80%;
+                margin: 2%;
+                cursor: pointer;
+                border: 2px solid rgba(190,190,190);
+                color: rgba(190,190,190);
+            }
+            .contact-form .fa:hover{
+                cursor: pointer;
+                border:2px solid #fff;
+                color: #fff;
+            }
+            .contact-form{
+                display: grid;
+                grid-template-columns: auto auto;
+            }
+            .form-info{
+                font-size: 16px;
+                font-style: italic;
+                color: #fff;
+                letter-spacing: 2px;
+            }
+            input{
+                padding: 10px;
+                margin: 10px;
+                width: 70%;
+                background-color: rgba(136,133,133,0.5);
+                color: #fff;
+                border: none;
+                outline: none;
+            }
+            input::placeholder
+            {
+                color: #fff;
+            }
+            textarea{
+                padding: 10px;
+                margin: 10px;
+                width: 70%;
+                background-color: rgba(136,133,133,0.5);
+                color: #fff;
+                border: none;
+                outline: none;
+            }
+            textarea::placeholder{
+                color: #fff;
+            }
+            .submit{
+                width: 40%;
+                background: none;
+                padding: 4px;
+                outline: none;
+                font-size: 13px;
+                font-weight: bold;
+                letter-spacing: 2px;
+                height: 33px;
+                text-align: center;
+                cursor: pointer;
+                letter-spacing: 2px;
+                margin-left: 3%;
+                border: 2px solid rgba(190,190,190);
+                color: rgb(190,190,190);
+            }
+            .submit:hover{
+                border: 1px solid #fff;
+                color: #fff;
+                cursor:pointer;
+            }
+                  
+        </style>
+
+
+    </head>
+    <body>
+        
+        <nav>
+            <ul>
+                <li>
+                    <form>
+                        <input type="text" placeholder="Search Products">
+                    </form>
+                </li>
+                <li><a href="#fifthsec">CONTACT</a></li>
+                <li ><a href="#fourthsec">BLOG</a></li>
+                <li><a href="#thirdsec">PRODUCTS</a></li>
+                <li><a href="#secondsec">ABOUT</a></li>
+                <li><a href="#istsec">HOME</a></li>
+                
+            </ul>
+        </nav>
+        <div id="main">
+            <h1> SA ECLECTRONICS</h1>
+        </div>
+        <div id="istsec">
+            <h1 id="n">HOME</h1>
+            <div id="n1">
+              
+                <img src="pics/apple-coffee-computer-desk-356056.jpg" height="530px" width="600px">
+                <p>S A Electronics in ABC. Electronic Goods Showrooms with Address, Contact Number, Photos.
+
+                    With wide range of products, S A Electronics at Bhosari Industrial Estate, Pune has become a name to reckon with in the electronics retail industry. Established in the year 1995, this electronics store takes care of all the gadget related requirements of its customers. It is situated at Priydarshni Mahila Swaym Rojgar Industrial Society Ycm Midc Corner, Bhosari Industrial Estate. In order to make its products and services readily and easily available to a larger audience, the store occupies a central spot in the city at a neighbourhood which is well-connected to all parts of the city. A dense network of public modes of transportation connects the vicinity to several other parts of the city ensuring citizens can easily be on their way to the store without having to fret about commuting hassles. Undoubtedly it is one of the electronic goods showrooms in Bhosari Industrial Estate, Kashmir.</p>
+                    <p>When visiting S A Electronics at Bhosari Industrial Estate, customers will be awe-struck by the entire range of products that are available here. Customers at this store have a wide range of options to choose from in terms of the best of brands that are available under one roof. Right from the latest mobile phones and cameras to laptops, television and audio sets, kitchen appliances and home appliances, every single electronic product can be found here. One can find the best of products from the most reliable brands which include the likes of Sony, LG, Apple, Samsung, Dell, Lenovo, Toshiba, Whirlpool, Panasonic, Videocon and various others. One can compare the features and prices of products available across brands and make an informed decision with suggestions from the staff who have in-depth knowledge of the products and offer complete assistance to customers. The store is open from 09:00 - 18:00 on all days of the week. </p>
+                        
+                           
+            </div>
+        </div>
+        <br>
+        <br>
+        <div id="secondsec">
+            <h1 id="n">ABOUT</h1>
+            <h2>Welcome to SA ELECTRONICS</h2>
+            <div id="ab">
+                <img id="about" src="pics/ch.jpg"  height="300px" width="400px">                
+            <p>We, SA ECLECTRONICS, started in the years 1999are one of the foremost wholesaler trader of an extensive array of Engineering Equipment. Our offered range consists of best grade Wika Level Transmitter, Wika Temperature Transmitters and Wika Pressure Transmitter. To manufacturing these products, our vendors use quality norms and top grade materials and modern machines. These products are highly appreciated in the market due to their features like perfect finish, damage resistance, lightweight and durability. Also, the offered range is demanded in the pharmaceutical, chemicals, engineering, automobile, and plastic industries.
+                Since the incorporation of our business, our all assortment of products is procured from the most reliable vendors. Also, the persons we appointed have wide experience of their specialized wings. Due to the relentless work of our employees and vendors, we have gained the trust of numerous customers. Our patrons like us for our large distribution network and sound financial position. With the support of our professionals, we are able to gain a trustworthy relationship with our clients in short span of time. 
+                Under the direction of our mentor, Mr. SAKIB SHABIR, we are able to create a huge patron. Also, we have been able to gain prominence in the industry, owing to his organizational skills and ethical business policies.</p>
+              <h3> Our Turnkey Solutions</h3> 
+
+<p>Our presence of more than a decade in the industry has provided us with the necessary expertise in our domain, which has helped us in supplying our clients with products that are manufactured as per their specific needs. In our endeavors towards offering products that are in exact tandem with the requirements of our customers, we provide them with turnkey solutions for our range of Pneumatics & General Purpose Engineering Instruments.</p>
+<h3>Why Us?</h3>
+
+            <p>We are one of the consistent organizations in this domain. We are offering an exclusive range of engineering equipment that is designed and developed as per quality standards at our vendor’s end. Apart from this, we ensure timely dispatch of our products within the set time constraints.
+                one of the consistent organizations in this domain. We are offering an exclusive range of engineering equipment that is designed and developed as per quality standards at our vendor’s end. Apart from this, we ensure timely dispatch of our products within the set time constraints
+            </p>    
+        
+        </div>
+        </div>
+        <br>
+        <br>
+        <div id="thirdsec">
+            <h1 id="n">PRODUCTS</h1>
+            <hr>
+            <div>
+                <h2>MOBILE PHONES</h2>
+                <img  id="mp"src="pics/p1.png" height="200px" width="300px">
+                <img id="mp" src="pics/p2.png" height="200px" width="300px">
+                <img id="mp" src="pics/p3.png" height="200px" width="300px">
+                <img id="mp" src="pics/p4.png" height="200px" width="250px">
+
+            </div>
+            
+            <div>
+                <h2>EARPHONES</h2>
+                <img  id="mp"src="pics/pe1.png" height="200px" width="300px">
+                <img id="mp" src="pics/pe2.png" height="200px" width="300px">
+                                
+
+            </div>
+        </div>
+        <hr>
+        <div id="fourthsec">
+            <h1 id="n4">BLOG</h1>
+            <img id="fi"src="pics/foot.jpg" width="50%" height="500px">
+            <p>If the great outdoors are your second home, you’ve probably landed on REI’s blog once or twice -- or you might even be subscribed. Either way, if you think you’re only going to find articles about camping there, you’re wrong.
+                REI does an all around great job utilizing their blog. As an outdoor clothing, gear, and footwear company, their blog provides tips, comparisons, and step-by-step guides for everything from hiking, cycling, traveling, to even camping.
+                They’ve built a platform that absolutely resonates with their audience and customers. 
+                Whether you’re a thrill seeker or simply enjoy hiking or cycling, REI is there to help you focus on your adventure. 
+                My favorite part of their blog would have to be the rate this story section that’s prominently placed next to the article’s title. This definitely kicks social proof up a notch!</p>
+                <p>For those of you that haven’t noticed, Buffer recently switched things up with their new blog design.
+                    One of the biggest things they’ve done is add a discover block on the blog homepage reading, “What do you want to learn about today?” 
+                    This search features definitely comes in handy if you have over 900 posts around a particular topic.
+                    A design element they’ve included is various page templates for their content. A blog isn’t one size fits all. Depending on the type of post, the design layout allows them to tell stories more effectively through the help of two different article formats. Their making content adaptable to serve different purposes. The two layouts include toolbox articles (geared to support tip articles) and magazine articles (full-width background photo used for editorial-lead posts).</p>
+                 <p> Depending on the type of post, the design layout allows them to tell stories more effectively through the help of two different article formats. Their making content adaptable to serve different purposes. The two layouts include toolbox articles (geared to support tip articles) and magazine articles (full-width background photo used for editorial-lead posts).</p>        </div>
+
+        <div id="fifthsec">
+            <h1 id="n">CONTACT US</h1>
+            <section id="contact-section">
+                <div class="container">
+                    <h4>CONTACT US</h4>
+                    <p class="t">Email us and keep upto date our latest news</p>
+                    <div class="contact-form">
+                        <div><i class="fa fa-map-marker"></i><span class="form-info">Khayar,Anantnag ,jandk </span>
+                        <br>
+                    <i class="fa fa-phone"></i> <span class="form-info">phone no +916005014366</span><br>
+                    <i class="fa fa-envelope"></i><span class="form-info">sakibshabir1111@gmail.com</span>
+                </div>
+                <!-- Second Grid-->
+                <div class="form">
+                    <form id="contact-form" method="post" action="form.php"> 
+                        <input name="name" type="text" placeholder="YOUR NAME" required>
+                        <input name="lname" type="text" placeholder="Last Name" required>
+                        <input name="email" type="text" placeholder="Email" required>
+                        <input name="sub" type="text" placeholder="Subject of this message" required>
+                        <textarea name="message" placeholder="Message" rows="5" require></textarea>
+                        <button type="submit" class="submit">Send Message</button>
+                    </form>
+                </div>
+
+                    </div>
+                </div>
+            </section>
+        </div>
+    </body>
+</html>
